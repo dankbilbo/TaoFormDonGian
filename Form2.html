@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form2</title>
+</head>
+<body><table BGCOLOR="#00ffff"><form>
+                <tr>
+                <!--tạo bảng tiêu đề đăng ký học viên colspan = 2 -->
+                <tr bgcolor="pink"><td colspan="2"><h1 style="text-align: left">Đăng ký học viên</h1></td></tr>
+                <!-- tạo bảng 2 textfield "họ tên" và "ngày sinh"-->
+                <tr>
+                    <td align="left">Họ và tên</td>
+                    <td align="left"><input type="text" name="fullName" /></td>
+                </tr>
+                <tr>
+                    <td align="left">Ngày sinh</td>
+                    <td align="left"><input type="text" name="email" /></td>
+                </tr>
+                <!--tạo radio giới tính-->
+                <tr>
+                    <td align="left">Giới tính</td>
+                    <td><label><input align="left" type="radio" name="gender" value="male" checked/>Nam</label>
+                    <label><input align="left" type="radio" name="gender" value="female"/>Nữ</label></td>
+                </tr>
+                <!--tạo textarea địa chỉ-->
+                <tr>
+                    <td align="left">Địa chỉ</td>
+                    <td><textarea align="left" cols="50" rows="4"></textarea></td>
+                </tr>
+                <!--tạo dropdown list lớp-->
+                <tr>
+                    <td align="left">Lớp</td>
+                    <td><select name="class" id="class">
+                            <option value="">---Chọn lớp---</option>
+                            <option value="java">JavaCGC8</option>
+                            <option value="php">PHPCGC8</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- tạo textfield email và điện thoại-->
+                <tr>
+                    <td align="left">Email</td>
+                    <td align="left"><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                    <td align="left">Điện thoại</td>
+                    <td align="left"><input type="text" name="phoneNumber" /></td>
+                </tr>
+
+                <!--tạo button đăng ký và nhập lại -->
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="send">
+                    <input type="reset" value="reset"</td>
+                </tr>
+</form>
+</table>
+</body>
+</html>
